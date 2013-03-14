@@ -1,8 +1,8 @@
 #!/bin/bash 
-##wget --no-check-certificate https://gist.github.com/raw/4461655/0ae3f658dd73940050021509e5e9317fc0103ad4/install.sh && bash install.sh
+##wget --no-check-certificate https://raw.github.com/paritoshparitosh57/fedena-install/master/install.sh
 clear
 
-server_path='https://bitbucket.org/passionate/fedena/raw/2bb573342799bdb2ae5502bd128208e330a83718'
+server_path='https://raw.github.com/paritoshparitosh57/fedena-install/master/ymlwriter.rb'
 
 echo "Updating system"
 sudo apt-get update -y
@@ -15,7 +15,7 @@ sudo apt-get -y install \
     bison openssl zlib1g \
     libxslt1.1 libssl-dev libxslt1-dev \
     libxml2 libffi-dev libyaml-dev \
-    libxslt-dev autoconf libc6-dev \
+    libxslt1-dev autoconf libc6-dev \
     libreadline6-dev zlib1g-dev libcurl4-openssl-dev \
     libtool unzip libcurl4-openssl-dev libssl-dev apache2-prefork-dev libapr1-dev libaprutil1-dev
 
@@ -33,10 +33,14 @@ echo -e "Installing git..."
 sudo apt-get -y install git-core 
 echo "==> done..."
 
+
+
 echo -e "Installing RVM..."
-\curl -L https://get.rvm.io | bash -s stable
+\curl -L https://get.rvm.io | bash -s stable 
 source ~/.bashrc
 echo "done"
+
+
 
 echo "Installing Ruby "
 rvm install 1.8.7
@@ -69,7 +73,7 @@ cd fedena/
 export RAILS_ENV=production
 
 
-wget --no-check-certificate https://bitbucket.org/passionate/fedena/raw/6b52d5f09f53c41c2c92d07e1f86333d51438a5a/ymlwriter.rb
+wget --no-check-certificate $server_path
 chmod +x ymlwriter.rb
 ruby ymlwriter.rb $password
 rm ymlwriter.rb

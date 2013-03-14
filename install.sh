@@ -66,7 +66,7 @@ gem install passenger
 
 echo "download fedena"
 cd ~
-wget http://www.projectfedena.org/download/fedena-github
+wget http://www.projectfedena.org/download/fedena-github -O fedena.zip
 unzip fedena-github
 mv projectfedena-fedena* fedena/
 cd fedena/

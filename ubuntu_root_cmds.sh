@@ -7,7 +7,7 @@ function update {
 function install_essential_tool {
   sudo apt-get -y install \
     wget curl build-essential clang \
-    bison openssl zlib1g \
+    bison openssl zlib1g  unzip \
     libxslt1.1 libssl-dev libxslt1-dev \
     libxml2 libffi-dev libyaml-dev \ 
     libxslt1-dev autoconf libc6-dev \
@@ -56,6 +56,7 @@ function install_rvm {
 
 function install_ruby {
   rvm install 1.8.7
+  ruby -v
 }
 
 function dont_install_rdoc_ri_withs_gems {

@@ -110,7 +110,7 @@ function fresh-install {
   install_imagemagick
   install_git
   install_apache2
-  install mysql 
+  install_mysql 
   install_rvm
   install_ruby
   dont_install_rdoc_ri_withs_gems

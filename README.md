@@ -1,6 +1,6 @@
 #Fedena Installation Script 
 
-The official fedena installation guide is not fully documented.So,here i have released fully working installation script.I tested in Ubuntu Server 12.04.1 LTS in AWS-ec2 and it is working fine. 
+The official fedena installation guide is not fully documented.So,here i have released fully working installation script.I have tested in Ubuntu Server 12.04.1 LTS in AWS-ec2 and it is working fine. 
 
 ##Features 
 * RVM Support
@@ -15,6 +15,7 @@ The official fedena installation guide is not fully documented.So,here i have re
 ##Contribution :thumbsup:
  * Centos support script welcome . 
  * Code Refactoring
+ * Code Commenting
 
 
 Enjoy :smiley:

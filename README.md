@@ -1,12 +1,20 @@
-Fedena Installation Scrip
----
+#Fedena Installation Script 
+
 The official fedena installation guide is not fully documented.So,here i have released fully working installation script.I tested in Ubuntu Server 12.04.1 LTS in AWS-ec2 and it is working fine. 
 
-#Installation
- ## For ubuntu or Debian
-    `curl https://raw.github.com/Passionate/fedena-install/master/root_cmds.sh | bash `
+##Features 
+* RVM Support
+* Apache with Phussion Passenger 
+* Fully Automated
 
-#Contribution
-  Centos support script welcome . 
-----
-Enjoy :)
+##Installation 
+ 
+### For ubuntu or Debian
+    curl https://raw.github.com/Passionate/fedena-install/master/root_cmds.sh | bash 
+
+##Contribution :thumbsup:
+ * Centos support script welcome . 
+ * Code Refactoring
+
+
+Enjoy :smiley:

@@ -4,7 +4,7 @@ The official fedena installation guide is not fully documented.So,here i have re
 
 #Installation
  ## For ubuntu or Debian
-    curl https://raw.github.com/Passionate/fedena-install/master/root_cmds.sh | bash 
+    `curl https://raw.github.com/Passionate/fedena-install/master/root_cmds.sh | bash `
 
 #Contribution
   Centos support script welcome . 

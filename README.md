@@ -13,6 +13,7 @@ The official fedena installation guide is not fully documented.So,here i have re
     curl https://raw.github.com/Passionate/fedena-install/master/root_cmds.sh | bash 
 
 ##Contribution :thumbsup:
+ * log support
  * Centos support script welcome . 
  * Code Refactoring
  * Code Commenting

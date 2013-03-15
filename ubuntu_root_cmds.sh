@@ -50,7 +50,7 @@ function install_mysql {
 }
 
 function install_rvm {
-  \curl -L https://get.rvm.io | bash -s stable 
+  curl https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable 
   source ~/.bashrc
 }
 

@@ -1,6 +1,6 @@
 #Fedena Installation Script 
 
-The official fedena installation guide is not fully documented.So,here i have released fully working installation script.I have tested in Ubuntu Server 12.04.1 LTS 64 bit  in AWS-ec2 and it is working fine. 
+The official fedena installation guide is not fully documented.So,here i have released fully working installation script.I have tested in **Ubuntu Server 12.04.1 LTS 64 bit  in AWS-ec2** and it is working fine. 
 
 ##Features 
 * RVM Support
@@ -11,7 +11,8 @@ The official fedena installation guide is not fully documented.So,here i have re
  
 ### For ubuntu or Debian
 Just ssh to your server , make a/c say `deployer` with `sudo` permission and run the below command
-    curl https://raw.github.com/Passionate/fedena-install/master/ubuntu_root_cmds.sh | bash 
+
+    curl https://raw.github.com/Passionate/fedena-install/master/ubuntu_fedena_install.sh | bash 
 The above command will take you straight to `Phussion Passenger installation` with fedena in `~/fedena` 
 
 ##Contribution :thumbsup:

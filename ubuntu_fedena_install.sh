@@ -55,8 +55,9 @@ function install_rvm {
 }
 
 function install_ruby {
-  rvm install 1.8.7
-  rvm use 1.9.2-p180 --default
+  rvm install ruby-1.8.7-p371
+  rvm use ruby-1.8.7-p371 --default
+  rvm rubygems 1.4.2
   background_color "ruby 1.8.7 installed"
   echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" ' >> ~/.bashrc
   sudo apt-get install -y libgemplugin-ruby
@@ -67,6 +68,7 @@ function dont_install_rdoc_ri_withs_gems {
 }
 
 function install_fedena_gems {
+  
   gem install bundler 
   gem install rails -v 2.3.5 
   gem install  i18n -v 0.4.2 
@@ -75,6 +77,7 @@ function install_fedena_gems {
   gem install  rake -v 0.8.7 
   gem install  rush -v 0.6.8 
   gem update --system 1.4.2
+
   gem install passenger
   background_color "fedena required gems are installed"
 }

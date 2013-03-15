@@ -60,7 +60,6 @@ function install_ruby {
   background_color "ruby 1.8.7 installed"
   echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" ' >> ~/.bashrc
   sudo apt-get install -y libgemplugin-ruby
-
 }
 
 function dont_install_rdoc_ri_withs_gems {

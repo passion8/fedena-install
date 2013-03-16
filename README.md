@@ -10,7 +10,7 @@ The official fedena installation guide is not fully documented.So,here i have re
 ##Installation 
  
 ### For ubuntu or Debian
-Just ssh to your server , make a/c say `deployer` with `sudo` permission and run the below command
+Just ssh to your server , make a/c say `deployer` with `sudo` permission and run the below command in home directory
 
 
     curl https://raw.github.com/Passionate/fedena-install/master/ubuntu_fedena_install.sh | bash 

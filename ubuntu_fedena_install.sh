@@ -55,12 +55,14 @@ function install_rvm {
 }
 
 function install_ruby {
+  source ~/.bashrc
   rvm install ruby-1.8.7-p371
   rvm use ruby-1.8.7-p371 --default
   rvm rubygems 1.4.2
   background_color "ruby 1.8.7 installed"
   echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" ' >> ~/.bashrc
   sudo apt-get install -y libgemplugin-ruby
+  rvm use ruby-1.8.7-p371 --default
 }
 
 function dont_install_rdoc_ri_withs_gems {
@@ -68,7 +70,7 @@ function dont_install_rdoc_ri_withs_gems {
 }
 
 function install_fedena_gems {
-  
+  source ~/.bashrc
   gem install bundler 
   gem install rails -v 2.3.5 
   gem install  i18n -v 0.4.2 
@@ -87,7 +89,13 @@ function make_production_mode {
  source ~/.bashrc
  background_color "Its now a production mode"
 }
-
+function remove_rake_10.04 {
+  rm ~/.rvm/gems/ruby-1.8.7-p371@global/bin/rake
+  rm ~/.rvm/gems/ruby-1.8.7-p371@global/cache$ rm rake-10.0.3.gem
+  rm -rf ~/.rvm/gems/ruby-1.8.7-p371@global/gems/rake-10.0.3/ 
+  rm  -rf ~/.rvm/gems/ruby-1.8.7-p371@global/specifications/rake-10.0.3.gemspec 
+  source ~/.bashrc
+}
 function get_fedena {
   wget http://www.projectfedena.org/download/fedena-github -O fedena.zip
   sudo apt-get install unzip
@@ -99,8 +107,7 @@ function get_fedena {
 
 function write_database_file {
   echo 
-  echo "Hi, i am writing config/database.yml file with your mysql password,please provide me so i can do it for you"
-  read password
+  read  -p "Hi, i am writing in config/database.yml so please provide me your root mysql password  " password
   curl https://raw.github.com/Passionate/fedena-install/master/ymlwriter.rb | ruby $password
   background_color "database.yml updated"
 }
@@ -129,6 +136,7 @@ function fresh-install {
   dont_install_rdoc_ri_withs_gems
   install_fedena_gems
   make_production_mode
+  remove_rake_10.04
   get_fedena 
   write_database_file
   create_db

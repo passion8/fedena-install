@@ -12,7 +12,9 @@ The official fedena installation guide is not fully documented.So,here i have re
 ### For ubuntu or Debian
 Just ssh to your server , make a/c say `deployer` with `sudo` permission and run the below command
 
+
     curl https://raw.github.com/Passionate/fedena-install/master/ubuntu_fedena_install.sh | bash 
+
 The above command will take you straight to `Phussion Passenger installation` with fedena in `~/fedena` 
 
 ##Contribution :thumbsup:

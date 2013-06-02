@@ -56,7 +56,7 @@ source ~/.bashrc
 wget http://www.projectfedena.org/download/fedena-github -O fedena.zip
 unzip fedena.zip && mv projectfedena-fedena* fedena/  && cd fedena/
 background_color "Latest fedena downloaded and extracted"
-wget https://raw.github.com/Passionate/fedena-install/master/ymlwriter.rb 
+wget https://raw.github.com/passion8/fedena-install/master/ymlwriter.rb 
 ruby  ymlwriter.rb $password
 rm ymlwriter.rb
 background_color "database.yml updated"

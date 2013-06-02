@@ -11,11 +11,11 @@ The official fedena installation guide is not fully documented.So,here i have re
 2. Run the below command in home directory
   1. First install the  required fedena dependency . 
 
-            curl https://raw.github.com/passion8/fedena-install/easy-install/required.sh | sudo bash
+            curl https://raw.github.com/passion8/fedena-install/master/required.sh | sudo bash
 
   2. Now, install fedena finally
 
-            curl https://raw.github.com/passion8/fedena-install/easy-install/fedena-related.sh | sudo bash
+            curl https://raw.github.com/passion8/fedena-install/master/fedena-related.sh | sudo bash
 
 
 The above command will take you straight to `Phussion Passenger installation` with fedena in `~/fedena` 

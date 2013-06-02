@@ -8,7 +8,7 @@ The official fedena installation guide is not fully documented.So,here i have re
 * Fully Automated
 
 ##Installation 
- 
+
 ### For ubuntu or Debian
 1. Just ssh to your server , make a/c say `deployer` with `sudo` permission .
 2. Run the below command in home directory
@@ -18,6 +18,9 @@ The official fedena installation guide is not fully documented.So,here i have re
 
 
 The above command will take you straight to `Phussion Passenger installation` with fedena in `~/fedena` 
+
+### if you want an easy solution
+  you should go to [master branch](https://github.com/passion8/fedena-install) 
 
 ### if you're having some problem , follow 
   

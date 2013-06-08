@@ -11,7 +11,7 @@ The official fedena installation guide is not fully documented.So,here i have re
 2. Run the below command in home directory
   1. First install the  required fedena dependency . 
 
-            curl https://raw.github.com/passion8/fedena-install/master/required.sh | sudo bash
+            curl https://raw.github.com/passion8/fedena-install/master/required.sh | bash
 
   2. Now, install fedena finally
 

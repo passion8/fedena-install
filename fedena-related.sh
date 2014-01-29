@@ -28,9 +28,9 @@ sudo apt-get -y install libmysqlclient-dev  mysql-server mysql-client
 read  -p "Please tell your root password,it is required for fedena installation: " password
 wget https://raw.github.com/passion8/fedena-install/master/ymlwriter.rb 
 ruby  ymlwriter.rb $password && rm ymlwriter.rb && background_color "database.yml updated"
-sudo rm -rf /usr/lib/ruby/gems/1.8/gems/rake-10.0.4/ 
-sudo rm -rf /usr/lib/ruby/gems/1.8/cache/rake-10.0.4.gem
-sudo rm -rf /usr/lib/ruby/gems/1.8/specifications/rake-10.0.4.gemspec
+sudo rm -rf /usr/lib/ruby/gems/1.8/gems/rake-10.1.1/ 
+sudo rm -rf /usr/lib/ruby/gems/1.8/cache/rake-10.1.1.gem
+sudo rm -rf /usr/lib/ruby/gems/1.8/specifications/rake-10.1.1.gemspec
 sudo echo "export RAILS_ENV=production" >> ~/.bashrc
 source ~/.bashrc
 rake db:create
